@@ -1,7 +1,7 @@
-import './App.css';
+import './App.css'
 
-import React from 'react';
-import logo from './logo.svg';
+import Cells from './cells'
+import React from 'react'
 
 function App() {
   const json=[
@@ -33,7 +33,7 @@ else {
 
 const createRows = () =>{
   return json.map((row, index) => {
-   // const rowId = row[Object.keys(row)[idColIdx]] // eslint-disable-next-line
+  const rowId = row[Object.keys(row)[idColIdx]] // eslint-disable-next-line
     if (state.selectedRow === row ) {
         return <tr key={index} className={state.selectedRow === row ? `${cssClasses}` : ""} id={rowId} onClick={handleRowClick} >
             <Cells row={row}  />
