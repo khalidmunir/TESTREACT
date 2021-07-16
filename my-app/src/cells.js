@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Cells =()=>{
-
+const Cells =({row})=>{
 return <td>123</td>
 }
 
 export default Cells
+
