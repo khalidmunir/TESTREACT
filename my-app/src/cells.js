@@ -13,7 +13,7 @@ const Cells =({selectedRow,row,textInputChange,checkInputChange })=>{
 
     }
    
-    return cols.map((key)=>{
+    return cols.map((key, index)=>{
       
      if(typeof row[key]==="boolean"){
         return <td key={key} >
